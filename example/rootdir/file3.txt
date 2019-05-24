@@ -1,0 +1,3 @@
+i am a file created in mount directory.
+i love to be shown in logs.
+"this is also a file"

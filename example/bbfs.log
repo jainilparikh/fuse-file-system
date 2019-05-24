@@ -1,0 +1,5286 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 26
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 59b247d0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 59b23260
+    logfile = 59b24290
+    rootdir = /home/jainil/program/fuse_final/example/rootdir
+    umask = 00000
+
+bb_getattr(path="/.Trash", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.Trash", fpath = "/home/jainil/program/fuse_final/example/rootdir/.Trash"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.Trash-1000", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.Trash-1000", fpath = "/home/jainil/program/fuse_final/example/rootdir/.Trash-1000"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.xdg-volume-info", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.xdg-volume-info", fpath = "/home/jainil/program/fuse_final/example/rootdir/.xdg-volume-info"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/autorun.inf", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/autorun.inf", fpath = "/home/jainil/program/fuse_final/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0020a0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0020a0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc002020, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc0020d0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0020a0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0020a0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc00a7b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc00a7b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc00a730, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc00a7e0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc00a7b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc00a7b0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc012c80
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc012c80
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc012c00, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc012cb0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc012c80
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc012c80
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc01b150
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc01b150
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc01b0d0, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc01b180
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc01b150
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc01b150
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc023620
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc023620
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc0235a0, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc023650
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc023620
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc023620
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc02baf0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc02baf0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc02ba70, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc02bb20
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc02baf0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc02baf0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc033fc0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc033fc0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc033f40, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc033ff0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc033fc0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc033fc0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc03c490
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc03c490
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc03c4c0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc03c490
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc03c490
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0444d0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0444d0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc044500
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0444d0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0444d0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc04c510
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc04c510
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc04c540
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc04c510
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc04c510
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc054550
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc054550
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc054580
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc054550
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc054550
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc05c590
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc05c590
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc05c5c0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc05c590
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc05c590
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0645d0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0645d0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc064600
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0645d0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0645d0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad4001170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad4001170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd40010f0, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad40011a0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad4001170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad4001170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad40091b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40091b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd40010f0, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad40091e0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad40091b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40091b0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad40111f0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40111f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd40010f0, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad4011220
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad40111f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40111f0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc06c610
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc06c610
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc06c640
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc06c610
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc06c610
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc074650
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc074650
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc074680
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc074650
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc074650
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc07c690
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc07c690
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc07c6c0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc07c690
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc07c690
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0846d0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0846d0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc084700
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0846d0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0846d0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc08c710
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc08c710
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc08c740
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc08c710
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc08c710
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc094750
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc094750
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc094780
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc094750
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc094750
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc09c790
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc09c790
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc09c7c0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc09c790
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc09c790
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/autorun.inf", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/autorun.inf", fpath = "/home/jainil/program/fuse_final/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/.hidden", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.hidden", fpath = "/home/jainil/program/fuse_final/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/.hidden", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.hidden", fpath = "/home/jainil/program/fuse_final/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad40192b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40192b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd4019230, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad40192e0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad40192b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40192b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0a47d0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0a47d0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc03c410, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc0a4800
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0a47d0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0a47d0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/newfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad40212f0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40212f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd4019230, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad4021320
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad40212f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad40212f0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0acca0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0acca0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc0acc20, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc0accd0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0acca0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0acca0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/newfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad4029330
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad4029330
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd4019230, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad4029360
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad4029330
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad4029330
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0b4d60
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0b4d60
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xdc0b4ce0, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdadc0b4d90
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0b4d60
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0b4d60
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/newfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xe0c6cc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad4031370
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad4031370
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_readdir(path="/", buf=0xd4019230, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad40313a0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad4031370
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad4031370
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_open(path"/a.txt", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 35
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+
+bb_release(path="/a.txt", fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000023
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cb14f3b
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_open(path"/a.txt", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 35
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/this is a", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_release(path="/a.txt", fi=0xe146dce0)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000023
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/this is a", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/this is a", mode=0100644, dev=0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    open returned 35
+    close returned 0
+
+bb_getattr(path="/this is a", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_open(path"/this is a", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    open returned 35
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_open(path"/a.txt", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 36
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000024
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/a.txt", buf=0xd4039400, size=4096, offset=0, fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000024
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000024
+    lock_owner = 0x0000000000000000
+    pread returned 68
+
+bb_write(path="/this is a", buf=0xe2082060, size=68, offset=0, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000023
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+    pwrite returned 68
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_release(path="/a.txt", fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000024
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000024
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_release(path="/this is a", fi=0xe146dce0)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000023
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000023
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad0000d80
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0000d80
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc72d38
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0000bf0, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdad0000db0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad0000d80
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0000d80
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad0009080
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0009080
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0009000, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdad00090b0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad0009080
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0009080
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad00112f0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad00112f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0011270, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdad0011320
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad00112f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad00112f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad00193b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad00193b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0019330, filler=0xe1c8ad00, offset=0, fi=0xe146dc20)
+    readdir returned 0x0x7fdad00193e0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad00193b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad00193b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_getattr(path="/myfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/a.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_open(path"/a.txt", fi=0xe0c6cce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 39
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000027
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/a.txt", buf=0xdc0bcf50, size=4096, offset=0, fi=0xe146dce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000027
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000027
+    lock_owner = 0x0000000000000000
+    pread returned 68
+
+bb_getattr(path="/a.txt", statbuf=0xdbffec00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_release(path="/a.txt", fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000027
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000027
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5cb14f3b
+
+bb_open(path"/a.txt", fi=0xdbffece0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 39
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000027
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/this is a", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_open(path"/this is a", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    open returned 40
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/this is a", buf=0xd0021440, size=4096, offset=0, fi=0xdbffece0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    pread returned 68
+
+bb_write(path="/a.txt", buf=0xe2082060, size=68, offset=68, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000027
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000027
+    lock_owner = 0x0000000000000000
+    pwrite returned 68
+
+bb_getattr(path="/this is a", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cadb
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_release(path="/this is a", fi=0xdbffece0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+
+bb_release(path="/a.txt", fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000027
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000027
+    lock_owner = 0x0000000000000000
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    close returned 0
+    close returned 0
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0bcfd0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0bcfd0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xdc0bcf50, filler=0xe1c8ad00, offset=0, fi=0xdbffec20)
+    readdir returned 0x0x7fdadc0bd000
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0bcfd0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0bcfd0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_getattr(path="/myfile.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cadb
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca3f
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_open(path"/a.txt", fi=0xe0c6cce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 40
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/a.txt", buf=0xd0021850, size=4096, offset=0, fi=0xdbffece0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    pread returned 136
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_release(path="/a.txt", fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/a.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_open(path"/a.txt", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 40
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/a.txt", buf=0xd4039400, size=4096, offset=0, fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    pread returned 136
+
+bb_getattr(path="/a.txt", statbuf=0xdbffec00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_release(path="/a.txt", fi=0xe146dce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_open(path"/a.txt", fi=0xdbffece0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 40
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/a.txt", buf=0xdc0c5010, size=4096, offset=0, fi=0xe146dce0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    pread returned 136
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_release(path="/a.txt", fi=0xdbffece0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000028
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000028
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0c5090
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0c5090
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xdc0c5010, filler=0xe1c8ad00, offset=0, fi=0xdbffec20)
+    readdir returned 0x0x7fdadc0c50c0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0c5090
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0c5090
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_getattr(path="/myfile.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cadb
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xe146dc20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdadc0cd150
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0cd150
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xdc0cd0d0, filler=0xe1c8ad00, offset=0, fi=0xdbffec20)
+    readdir returned 0x0x7fdadc0cd180
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdadc0cd150
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdadc0cd150
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad0021440
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0021440
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0019330, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad0021470
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad0021440
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0021440
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_getattr(path="/myfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cadb
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad0029480
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0029480
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0019330, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad00294b0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad0029480
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad0029480
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/file3.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/file3.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/file3.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746732
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 90
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14e09
+    st_mtime = 0x5cb14e04
+    st_ctime = 0x5cb14e04
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_getattr(path="/myfile.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/myfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/myfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746733
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb14f37
+    st_mtime = 0x5ca51521
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/this is a", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/this is a", fpath = "/home/jainil/program/fuse_final/example/rootdir/this is a"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746789
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cadb
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/newfile.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/newfile.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/newfile.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746734
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 68
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ca6068c
+    st_mtime = 0x5ca51560
+    st_ctime = 0x5caed57e
+
+bb_getattr(path="/bogus.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/bogus.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746749
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5caed5b1
+    st_mtime = 0x5cb14fc8
+    st_ctime = 0x5cb14fc8
+
+bb_getattr(path="/d1", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/d1", fpath = "/home/jainil/program/fuse_final/example/rootdir/d1"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746735
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cb5df52
+    st_mtime = 0x5ca5d78a
+    st_ctime = 0x5caed57e
+
+bb_opendir(path="/", fi=0xdbffec20)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    opendir returned 0x0x7fdad00314c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad00314c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xe146dc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_readdir(path="/", buf=0xd0019330, filler=0xe1c8ad00, offset=0, fi=0xe0c6cc20)
+    readdir returned 0x0x7fdad00314f0
+calling filler with name file3.txt
+calling filler with name a.txt
+calling filler with name myfile.txt
+calling filler with name this is a
+calling filler with name newfile.txt
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name d1
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fdad00314c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fdad00314c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/a.txt", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 136
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cadb
+    st_ctime = 0x5cc7cadb
+
+bb_open(path"/a.txt", fi=0xdbffece0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 45
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=12, offset=136, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 12
+
+bb_write(path="/a.txt", buf=0xe2082060, size=2, offset=148, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe2060060, size=2, offset=150, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=2, offset=152, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe2082060, size=2, offset=154, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe2060060, size=2, offset=156, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=1, offset=158, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 1
+
+bb_release(path="/a.txt", fi=0xe0c6cce0)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/a.txt", statbuf=0xdbffec30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 159
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cb55
+    st_ctime = 0x5cc7cb55
+
+bb_open(path"/a.txt", fi=0xe146dce0)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    open returned 45
+    fi:
+    flags = 0x00008401
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+
+bb_write(path="/a.txt", buf=0xe2082060, size=11, offset=159, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 11
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=170, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=174, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=178, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=182, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=186, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=190, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=194, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=198, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=202, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=206, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=210, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=214, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=218, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=222, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=226, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=230, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=234, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=238, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=7, offset=242, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 7
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=249, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=253, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=257, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=261, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=265, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=269, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=7, offset=273, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 7
+
+bb_write(path="/a.txt", buf=0xe2082060, size=4, offset=280, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2060060, size=4, offset=284, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=4, offset=288, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 4
+
+bb_write(path="/a.txt", buf=0xe2082060, size=5, offset=292, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 5
+
+bb_write(path="/a.txt", buf=0xe2060060, size=2, offset=297, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=1, offset=299, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 1
+
+bb_write(path="/a.txt", buf=0xe2082060, size=2, offset=300, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe2060060, size=2, offset=302, fi=0xdbffed50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe20a4060, size=2, offset=304, fi=0xe146dd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_write(path="/a.txt", buf=0xe2082060, size=2, offset=306, fi=0xe0c6cd50)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    pwrite returned 2
+
+bb_release(path="/a.txt", fi=0xdbffece0)
+    fi:
+    flags = 0x00008401
+    fh_old = 0x0000002d
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x000000000000002d
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 308
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cb7e
+    st_ctime = 0x5cc7cb7e
+
+bb_getattr(path="/.hidden", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.hidden", fpath = "/home/jainil/program/fuse_final/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xdbffec00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 308
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cb7e
+    st_ctime = 0x5cc7cb7e
+
+bb_getattr(path="/.hidden", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.hidden", fpath = "/home/jainil/program/fuse_final/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xdbffec00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 308
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cb7e
+    st_ctime = 0x5cc7cb7e
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/", statbuf=0xdbffec00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 308
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cb7e
+    st_ctime = 0x5cc7cb7e
+
+bb_getattr(path="/.hidden", statbuf=0xe0c6cc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/.hidden", fpath = "/home/jainil/program/fuse_final/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xdbffec00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f
+
+bb_getattr(path="/a.txt", statbuf=0xe146dc30)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/a.txt", fpath = "/home/jainil/program/fuse_final/example/rootdir/a.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746610
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 308
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7cae3
+    st_mtime = 0x5cc7cb7e
+    st_ctime = 0x5cc7cb7e
+
+bb_getattr(path="/", statbuf=0xe0c6cc00)
+    my_fullpath:  rootdir = "/home/jainil/program/fuse_final/example/rootdir", path = "/", fpath = "/home/jainil/program/fuse_final/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 7746731
+    st_mode = 040755
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5cc7ca58
+    st_mtime = 0x5cc7ca3f
+    st_ctime = 0x5cc7ca3f

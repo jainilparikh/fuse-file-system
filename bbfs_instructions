@@ -1,0 +1,57 @@
+ 
+1. compile bbfs.c as:
+gcc bbfs.c -o bbfs `pkg-config fuse --cflags --libs`
+
+2.in example folder, 
+../src/bbfs rootdir mountdir
+
+3. change to mountdir
+4 .execute all commands. those will be reflected in the rootdir.
+5.unmount.
+
+
+
+
+////////////////////////////////////////////////
+Now, if you go into the example directory and execute
+
+    ../src/bbfs rootdir mountdir
+
+all of the files that are really in rootdir appear to also be in mountdir"
+
+
+    
+But, every time you perform any file operation in mountdir, the operation (and a whole bunch of both relevant and irrelevant stuff) gets logged to a new file in the current working directory called bbfs.log If you execute
+
+    tail -F bbfslog
+
+in another terminal window, you can watch the operations get logged.
+
+Finally, you can see that the operating system sees mountdir as a filesystem:
+
+
+    snowball:660$ mount | grep mountdir
+    bbfs on /home/joseph/fuse-tutorial/example/mountdir type fuse.bbfs (rw,nosuid,nodev,relatime,user_id=1248,group_id=1005)
+
+Unmounting
+
+Finally, you can unmount the filesystem with
+
+    snowball:661$ fusermount -u mountdir
+    snowball:662$ ls -lR
+    .:
+    total 40
+    -rw-r--r-- 1 joseph users   185 Jun  9 15:56 Makefile
+    -rw-r--r-- 1 joseph users 27520 Jun 12 17:57 bbfs.log
+    drwxr-xr-x 2 joseph users  4096 Jun 12 17:16 mountdir/
+    drwxr-xr-x 2 joseph users  4096 Jun 12 17:16 rootdir/
+
+    ./mountdir:
+    total 0
+
+    ./rootdir:
+    total 4
+    -rw-r--r-- 1 joseph users 11 Jun 12 17:16 bogus.txt
+
+(note that fusermount isn't part of this tutorial — it comes along with FUSE).
+
